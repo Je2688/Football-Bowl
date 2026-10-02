@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Retro Football Dynasty</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">🏈 RETRO BOWL DYNASTY</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#teams">Teams</a>
+      <a href="#franchise">Franchise</a>
+      <a href="#players">Players</a>
+    </nav>
+
+    <button class="pixel-button" onclick="startGame()">
+      PLAY NOW
+    </button>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">🏆 BUILD YOUR DYNASTY</p>
+
+        <h1>
+          YOUR TEAM.<br>
+          YOUR LEGACY.
+        </h1>
+
+        <p class="hero-text">
+          Take control of a football franchise, manage your roster,
+          make the big decisions and fight your way to the championship.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="pixel-button big" onclick="startGame()">
+            START SEASON
+          </button>
+
+          <button class="pixel-button secondary" onclick="showFeatures()">
+            EXPLORE FEATURES
+          </button>
+        </div>
+
+      </div>
+
+      <div class="football-card">
+
+        <div class="scoreboard">
+          <span>WEEK 12</span>
+          <span>FINAL</span>
+        </div>
+
+        <div class="team-score">
+          <div>
+            <span class="helmet">🏈</span>
+            <strong>TIGERS</strong>
+          </div>
+
+          <span class="score">31</span>
+        </div>
+
+        <div class="team-score">
+          <div>
+            <span class="helmet">🏈</span>
+            <strong>HAWKS</strong>
+          </div>
+
+          <span class="score">27</span>
+        </div>
+
+        <div class="game-status">
+          TOUCHDOWN! <span>🔥</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+
+      <div class="section-title">
+        <p class="eyebrow">GAMEPLAY</p>
+        <h2>PLAY THE GAME YOUR WAY</h2>
+        <p>
+          Fast-paced football combined with deep franchise management.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <span>🎮</span>
+          <h3>FAST FOOTBALL</h3>
+          <p>
+            Run the ball, throw deep, lead receivers and avoid defenders
+            in quick arcade-style football games.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span>🏈</span>
+          <h3>TOUCH PASSING</h3>
+          <p>
+            Choose where to throw. Lead your receivers and make difficult
+            throws under pressure.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span>🧠</span>
+          <h3>SMART DECISIONS</h3>
+          <p>
+            Manage the clock, decide when to kick, punt or go for it
+            on fourth down.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span>🔥</span>
+          <h3>COMEBACKS</h3>
+          <p>
+            Survive two-minute drills, late-game drives and overtime
+            battles.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span>🌧️</span>
+          <h3>DYNAMIC GAMES</h3>
+          <p>
+            Weather, stadium environments and crowd reactions make
+            every game feel different.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span>🏆</span>
+          <h3>WIN IT ALL</h3>
+          <p>
+            Make the playoffs, win the championship and build a football
+            dynasty across multiple seasons.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FRANCHISE -->
+    <section id="franchise" class="dark-section">
+
+      <div class="section-title">
+        <p class="eyebrow">FRANCHISE MODE</p>
+        <h2>BUILD A DYNASTY</h2>
+      </div>
+
+      <div class="franchise-grid">
+
+        <div class="franchise-item">
+          <strong>01</strong>
+          <h3>BUILD YOUR ROSTER</h3>
+          <p>
+            Draft rookies, sign free agents, trade players and develop
+            young talent.
+          </p>
+        </div>
+
+        <div class="franchise-item">
+          <strong>02</strong>
+          <h3>MANAGE YOUR TEAM</h3>
+          <p>
+            Handle contracts, salaries, coaching, facilities and team
+            morale.
+          </p>
+        </div>
+
+        <div class="franchise-item">
+          <strong>03</strong>
+          <h3>PLAY YOUR GAMES</h3>
+          <p>
+            Play important games manually or simulate games throughout
+            the season.
+          </p>
+        </div>
+
+        <div class="franchise-item">
+          <strong>04</strong>
+          <h3>CREATE LEGENDS</h3>
+          <p>
+            Turn rookies into stars and create Hall of Fame careers.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TEAMS -->
+    <section id="teams" class="section">
+
+      <div class="section-title">
+        <p class="eyebrow">THE LEAGUE</p>
+        <h2>CHOOSE YOUR TEAM</h2>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="team-card red">
+          <div class="team-logo">🐯</div>
+          <h3>TIGERS</h3>
+          <p>OFFENSE: 87</p>
+          <p>DEFENSE: 82</p>
+          <p>OVERALL: 85</p>
+          <button onclick="selectTeam('Tigers')">
+            SELECT
+          </button>
+        </div>
+
+        <div class="team-card blue">
+          <div class="team-logo">🦅</div>
+          <h3>HAWKS</h3>
+          <p>OFFENSE: 84</p>
+          <p>DEFENSE: 88</p>
+          <p>OVERALL: 86</p>
+          <button onclick="selectTeam('Hawks')">
+            SELECT
+          </button>
+        </div>
+
+        <div class="team-card green">
+          <div class="team-logo">🐊</div>
+          <h3>GATORS</h3>
+          <p>OFFENSE: 81</p>
+          <p>DEFENSE: 85</p>
+          <p>OVERALL: 83</p>
+          <button onclick="selectTeam('Gators')">
+            SELECT
+          </button>
+        </div>
+
+        <div class="team-card purple">
+          <div class="team-logo">🐺</div>
+          <h3>WOLVES</h3>
+          <p>OFFENSE: 90</p>
+          <p>DEFENSE: 79</p>
+          <p>OVERALL: 85</p>
+          <button onclick="selectTeam('Wolves')">
+            SELECT
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PLAYERS -->
+    <section id="players" class="dark-section">
+
+      <div class="section-title">
+        <p class="eyebrow">YOUR ROSTER</p>
+        <h2>STAR PLAYERS</h2>
+      </div>
+
+      <div class="player-table">
+
+        <div class="player-row header">
+          <span>PLAYER</span>
+          <span>POS</span>
+          <span>OVR</span>
+          <span>AGE</span>
+          <span>STATUS</span>
+        </div>
+
+        <div class="player-row">
+          <span>J. Carter</span>
+          <span>QB</span>
+          <span>94</span>
+          <span>27</span>
+          <span class="healthy">HEALTHY</span>
+        </div>
+
+        <div class="player-row">
+          <span>M. Williams</span>
+          <span>RB</span>
+          <span>91</span>
+          <span>25</span>
+          <span class="healthy">HEALTHY</span>
+        </div>
+
+        <div class="player-row">
+          <span>D. Johnson</span>
+          <span>WR</span>
+          <span>96</span>
+          <span>28</span>
+          <span class="healthy">HEALTHY</span>
+        </div>
+
+        <div class="player-row">
+          <span>K. Brown</span>
+          <span>LB</span>
+          <span>89</span>
+          <span>26</span>
+          <span class="injured">INJURED</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CHAMPIONSHIP -->
+    <section class="championship">
+
+      <div>
+
+        <p class="eyebrow">THE ULTIMATE GOAL</p>
+
+        <h2>WIN THE<br>RETRO BOWL</h2>
+
+        <p>
+          Build your franchise. Develop your stars.
+          Survive the playoffs.
+          Become champions.
+        </p>
+
+        <button class="pixel-button big" onclick="startGame()">
+          BEGIN YOUR LEGACY
+        </button>
+
+      </div>
+
+      <div class="trophy">
+        🏆
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="logo">🏈 RETRO BOWL DYNASTY</div>
+
+    <p>
+      A fan-made retro football game concept.
+    </p>
+
+    <p>
+      © 2026 Retro Football Dynasty
+    </p>
+
+  </footer>
+
+
+  <div id="notification" class="notification">
+    <span id="notificationText"></span>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
